@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type ="text/css" href="Style.css">
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,23 +43,17 @@
 			    
 			  </a>
 				<ul class="navbar-nav order-2 justify-content-center">
-				  <li class="nav-item active">
-					<a href="index.html" href ="" button type="button" class="btn btn-outline-light">Summary</button></a>
-				  </li>
-				  <li class="nav-item">
-					<a href="Comparison.html" href ="" button type="button" class="btn btn-outline-light">Comparison</button></a>
-				  </li>
+				  
 
 				  <div class="container">
-					<div class="dropdown">
-					  <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Plots
-					  </button>
-					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="Max Temperature.html">Max Temperature</a>
-						<a class="dropdown-item" href="Humidity.html">Humidity</a>
-						<a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-						<a class="dropdown-item" href="Wind speed.html">Wind speed</a>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+							<div id="plot"></div>
+								<script src="plots_mes.js"></script>
+							<div id="plot3"></div>
+								<script src="plots_año2018.js"></script>
+							<div id="plot2"></div>
+						<script src="plots_radial.js"></script>
+					 
 					  </div>
 					</div>
 					</div>
@@ -75,23 +71,9 @@
 	
 		<div class="container">
       <div class="header-text">
-		<h1>Latitud </h1>
+		<h1>Covid 19 </h1>
 		
-		   <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis,
-			frst pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p>
-			<p>After assembling the dataset, we used Matplotlib to plot various, aspects of the weather vs latitud.Factors we looked at incluide:
-			<p>temperature, cloudiness, wind speed and humidity.This provides the source data visualizations created as part of the analysis, as well as explanations and descriptions 
-			of any trends and correlations witnessed</p>
-
-			<div>
-				<h2>Visualizations</h2>
-				<a href="Max Temperature.html"><img src="images/plot_scatter_Lat_vs_MaxTemp.png" style="float:left;" width="250" height="150" alt="Maxtemp"/></a>
-				<a href="Humidity.html"><img src="images/plot_scatter_Lat_vs_Humidity.png" style="float:left;" width="250" height="150" alt="Humdity"/></a>
-				<a href="Cloudiness.html"><img src="images/plot_scatter_Lat_vs_Cloudiness.png" style="float:left;" width="250" height="150" alt="Cloudiness"/></a>
-				<a href="Wind speed.html"><img src="images/plot_scatter_Lat_vs_Winspeed.png" style="float:left;" width="250" height="150" alt="winspeed"/></a>
-			  </div>		
-
-      </div>
+		        </div>
 		
 			</div>
 		</div>
